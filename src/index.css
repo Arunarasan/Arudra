@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a365d;
+  --color-secondary: #4a5568;
+  --color-accent: #ed8936;
+  --color-industrial-grey: #2d3748;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition duration-300;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold text-primary mb-8 border-l-4 border-accent pl-4;
+  }
+}
